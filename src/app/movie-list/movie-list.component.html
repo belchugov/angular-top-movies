@@ -5,5 +5,5 @@
     <th>Year</th>
     <th>imdbRating</th>
   </tr>
-  <tr app-movie-short *ngFor="let movie of this.movies" [movie]="movie"></tr>
+  <tr app-movie-short *ngFor="let movie of (this.movies | sort:'imdbRating':true)" [movie]="movie"></tr>
 </table>

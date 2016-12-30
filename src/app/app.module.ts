@@ -9,6 +9,7 @@ import { MovieService } from './movie.service';
 import { MovieShortComponent } from './movie-short/movie-short.component';
 import { MovieSortComponent } from './movie-sort/movie-sort.component';
 import { MovieSearchComponent } from './movie-search/movie-search.component';
+import { SortMoviePipe } from './sort-movie.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MovieSearchComponent } from './movie-search/movie-search.component';
     MovieListComponent,
     MovieShortComponent,
     MovieSortComponent,
-    MovieSearchComponent
+    MovieSearchComponent,
+    SortMoviePipe
   ],
   imports: [
     BrowserModule,
