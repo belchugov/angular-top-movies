@@ -5,18 +5,5 @@
     <th>Year</th>
     <th>imdbRating</th>
   </tr>
-  <tr *ngFor="let movie of this.movies">
-    <td>
-      <img [src]="movie.Poster" alt="movie.Title">
-    </td>
-    <td>
-      {{movie.Title}}
-    </td>
-    <td>
-      {{movie.Year}}
-    </td>
-    <td>
-      {{movie.imdbRating}}
-    </td>
-  </tr>
+  <tr app-movie-short *ngFor="let movie of this.movies" [movie]="movie"></tr>
 </table>
