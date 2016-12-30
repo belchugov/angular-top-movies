@@ -1,0 +1,22 @@
+<table class="table">
+  <tr>
+    <th>Poster</th>
+    <th>Title</th>
+    <th>Year</th>
+    <th>imdbRating</th>
+  </tr>
+  <tr *ngFor="let movie of this.movies">
+    <td>
+      <img [src]="movie.Poster" alt="movie.Title">
+    </td>
+    <td>
+      {{movie.Title}}
+    </td>
+    <td>
+      {{movie.Year}}
+    </td>
+    <td>
+      {{movie.imdbRating}}
+    </td>
+  </tr>
+</table>
