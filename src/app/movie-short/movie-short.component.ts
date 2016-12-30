@@ -13,6 +13,19 @@ export class MovieShortComponent implements OnInit {
   get title(): string {
     return this.movie.Title;
   }
+
+  get poster(): string {
+    return this.movie.Poster;
+  }
+
+  get year(): number {
+    return this.movie.Year;
+  }
+
+  get imdbRating(): number {
+    return this.movie.imdbRating;
+  }
+
   constructor() { }
 
   ngOnInit() {
